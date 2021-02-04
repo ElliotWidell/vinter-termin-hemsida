@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  border: 0;
+}
+
+header {
+  text-align: center;
+  font-size: 4rem;
+  background-color: chartreuse;
+}
+
+nav {
+  font-size: 2rem;
+  background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+p {
+  font-size: 3rem;
+  background-color: pink;
+  text-align: center;
+}
+
+#link {
+  text-decoration: none;
+  color: black;
+}
