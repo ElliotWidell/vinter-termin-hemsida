@@ -3,27 +3,57 @@
   border: 0;
 }
 
+:root {
+  --back-color: #f2e9e4;
+  --beige-color: #c9ada7;
+  --purp-color: #9a8c98;
+  --blue-color: #4a4e69;
+  --darkblue-color: #22223b;
+}
+
+/* 22223B mörk mörk blå
+    mörk blå 4A4E69
+    lila beige 9A8C98
+    beige C9ADA7
+    vit beige F2E9E4
+    */
+
 header {
   text-align: center;
   font-size: 4rem;
-  background-color: chartreuse;
+  background-color: var(--darkblue-color);
+  color: white;
 }
 
 nav {
   font-size: 2rem;
-  background-color: aqua;
+  background-color: var(--blue-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-p {
+h2 {
   font-size: 3rem;
-  background-color: pink;
   text-align: center;
+  margin-top: 1.5rem;
 }
 
 #link {
   text-decoration: none;
   color: black;
+}
+
+#musicrec {
+  background-color: var(--beige-color);
+  font-size: 2rem;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: var(--back-color);
 }
