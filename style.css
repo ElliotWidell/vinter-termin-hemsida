@@ -1,6 +1,7 @@
 * {
   margin: 0;
   border: 0;
+  font-family: "Roboto Slab", serif;
 }
 
 :root {
@@ -23,6 +24,7 @@ header {
   font-size: 4rem;
   background-color: var(--darkblue-color);
   color: white;
+  font-family: "Merriweather";
 }
 
 nav {
