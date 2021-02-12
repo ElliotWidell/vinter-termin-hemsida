@@ -12,6 +12,10 @@
   --darkblue-color: #22223b;
 }
 
+body {
+  background-color: var(--back-color);
+}
+
 /* 22223B mörk mörk blå
     mörk blå 4A4E69
     lila beige 9A8C98
@@ -56,6 +60,12 @@ h2 {
   color: black;
 }
 
-body {
-  background-color: var(--back-color);
+#quiz {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+#quizbox {
+  border-radius: 1.5rem;
 }
