@@ -36,7 +36,7 @@ nav {
   background-color: var(--blue-color);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 h2 {
@@ -45,12 +45,12 @@ h2 {
   margin-top: 1.5rem;
 }
 
-#link {
+.link {
   text-decoration: none;
   color: black;
 }
 
-#musicrec {
+.musicrec {
   background-color: var(--beige-color);
   font-size: 2rem;
   width: 75%;
@@ -66,6 +66,25 @@ h2 {
   justify-content: space-around;
 }
 
+.songtext {
+  list-style: none;
+}
+
 #quizbox {
   border-radius: 1.5rem;
+}
+
+footer {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.random-btn {
+  margin-left: 33%;
+  margin-top: 4rem;
+  font-size: 3rem;
+  background-color: lawngreen;
 }

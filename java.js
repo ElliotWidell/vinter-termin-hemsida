@@ -1,41 +1,24 @@
-let q1 = document.querySelector("#question1-1");
 
-let socre = 0;
+let links = [
+    "https://www.youtube.com/watch?v=REmZhFKmOmo&ab_channel=PlayboiCartiVEVO",
+    "https://www.youtube.com/watch?v=bnFa4Mq5PAM&ab_channel=LILUZIVERT",
+    "https://www.youtube.com/watch?v=MieIOV-GoGo&ab_channel=Comethazine",
+    "https://www.youtube.com/watch?v=vVk47cEMfUQ&ab_channel=TeeGrizzley",
+    "https://www.youtube.com/watch?v=_mVD77GThEY&ab_channel=TeeGrizzley"
+]
 
-if(q1.checked === true)
-{
-    score = score + 1;
-}
 
-randomnumb = random(10);
-randomlink = "";
 
-if(randomnumb === 0)
-{
-    randomlink = "https://www.youtube.com/watch?v=REmZhFKmOmo&ab_channel=PlayboiCartiVEVO";
-}
 
-if(randomnumb === 1)
-{
-    randomlink = "https://www.youtube.com/watch?v=bnFa4Mq5PAM&ab_channel=LILUZIVERT"
-}
+let randomButton = document.querySelector(".random-btn");
 
-if(randomnumb === 2)
-{
-    randomlink = "https://www.youtube.com/watch?v=MieIOV-GoGo&ab_channel=Comethazine"
-}
+randomButton.addEventListener("click", goToRandom);
 
-if(randomnumb === 3)
-{
-    randomlink = "https://www.youtube.com/watch?v=vVk47cEMfUQ&ab_channel=TeeGrizzley"
-}
 
-if(randomnumb === 4)
-{
-    randomlink = "https://www.youtube.com/watch?v=cr82wSBZeeQ&ab_channel=LyricalLemonade"
-}
-
-if(randomnumb === 5)
-{
-    randomlink = "https://www.youtube.com/watch?v=_mVD77GThEY&ab_channel=TeeGrizzley"
+function goToRandom() {
+    let randomNumb = Math.floor(Math.random() * 5);
+    let randomLink = links[randomNumb];
+    console.log(randomNumb);
+    console.log(randomLink);
+    window.location.href = randomLink;
 }
