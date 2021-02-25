@@ -68,6 +68,15 @@ h2 {
 
 .songtext {
   list-style: none;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.songPick {
+  display: flex;
+  justify-content: center;
 }
 
 #quizbox {
